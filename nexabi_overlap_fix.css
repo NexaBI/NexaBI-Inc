@@ -1,0 +1,49 @@
+/* ==== NexaBI overlap fix (drop-in) ==== */
+
+/* Ensure images never overflow their containers */
+img, .card.media img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Prevent grid items from overflowing each other */
+.grid, .two, .faq, .pricing, .kpi {
+  align-items: start;
+}
+.grid > *, .two > * {
+  min-width: 0;
+}
+
+/* Media cards: contain children and clip overflow */
+.card.media {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* Keep hero text above background art on all viewports */
+.hero { position: relative; z-index: 0; }
+.nav { position: sticky; z-index: 10; }
+.hero .actions, .hero h1, .hero p, .badges { position: relative; z-index: 1; }
+
+/* Narrow screens: stack columns cleanly and avoid cramped layout */
+@media (max-width: 1000px) {
+  .grid, .two, .pricing, .faq { grid-template-columns: 1fr; }
+  .kpi { grid-template-columns: 1fr 1fr; }
+}
+
+/* Very small screens: full-width media and comfortable spacing */
+@media (max-width: 600px) {
+  .kpi { grid-template-columns: 1fr; }
+  .card, .card.media { margin: 0; }
+  .hero h1 { font-size: 30px; }
+}
+
+/* Optional: guard against super-tall images in media cards with a soft cap */
+.card.media img[alt*="visual"], .card.media img[alt*="dashboard"], .card.media img[alt*="ROI"] {
+  max-height: 640px;
+}
