@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NexaBI — Next‑Gen BI for Small Business</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -12,9 +13,10 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand"><span class="brand-badge"></span> NexaBI</div>
+      <div class="brand"><img src="assets/logo_light.png" alt="NexaBI logo"> NexaBI</div>
       <div>
         <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
         <a href="#how">How it works</a>
         <a href="register.html" class="cta">Get Started</a>
       </div>
@@ -24,7 +26,7 @@
   <header class="hero">
     <div class="container">
       <h1>AI‑Powered Business Intelligence for Small Teams</h1>
-      <p>Turn sales, inventory, and marketing data into clear, daily decisions. Dashboards, alerts, and recommendations — no BI department required.</p>
+      <p>Turn sales, inventory, and marketing data into clear, daily decisions. Dashboards, alerts, and forecasts — no BI department required.</p>
       <div class="actions">
         <a class="button" href="register.html">Start free</a>
         <a class="button alt" href="#features">See features</a>
@@ -35,9 +37,6 @@
         <span class="badge">ML Forecasts</span>
         <span class="badge">Retail & Auto Dealer</span>
       </div>
-      <div class="hero-visual">
-        <img src="assets/dashboard_demo.png" alt="NexaBI demo dashboard">
-      </div>
     </div>
   </header>
 
@@ -45,31 +44,44 @@
     <div class="container">
       <h2>Everything you need to run smarter</h2>
       <p class="lead">Plug into your existing spreadsheets and tools. Get instant visibility and ML‑powered recommendations.</p>
-      <div class="grid">
+
+      <div class="kpi">
+        <div class="tile"><div class="k">Monthly Revenue</div><div class="v">$128,450</div></div>
+        <div class="tile"><div class="k">Gross Margin</div><div class="v">38.4%</div></div>
+        <div class="tile"><div class="k">Top Category</div><div class="v">Accessories</div></div>
+        <div class="tile"><div class="k">Inventory Days</div><div class="v">27</div></div>
+      </div>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="card media"><img src="assets/feat_sales.png" alt="Sales and profit visuals"></div>
         <div class="card">
           <h3>Sales & Profit Insights</h3>
           <p>Track what sells, margins by product, and revenue trends — at a glance.</p>
         </div>
+
         <div class="card">
           <h3>Inventory Intelligence</h3>
           <p>Low‑stock alerts, dead‑stock detection, and reorder suggestions.</p>
         </div>
+        <div class="card media"><img src="assets/feat_inventory.png" alt="Inventory visuals"></div>
+
+        <div class="card media"><img src="assets/feat_marketing.png" alt="Marketing ROI visuals"></div>
         <div class="card">
           <h3>Marketing ROI</h3>
           <p>See which channels actually drive sales. Cut wasted ad spend.</p>
         </div>
-        <div class="card">
-          <h3>ML Forecasts</h3>
-          <p>Predict demand and optimize pricing with built‑in machine learning.</p>
-        </div>
-        <div class="card">
-          <h3>Automated Reports</h3>
-          <p>Weekly PDFs and email alerts delivered to your inbox automatically.</p>
-        </div>
-        <div class="card">
-          <h3>Simple & Secure</h3>
-          <p>No IT team required. You own your data, we make it useful.</p>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>What it looks like</h2>
+      <p class="lead">Clean, modern dashboards designed to be read in seconds.</p>
+      <div class="card media"><img src="assets/dashboard_demo.png" alt="NexaBI dashboard overview"></div>
+      <div class="cta-band">
+        <strong>Ready to see your data work for you?</strong>
+        <a class="button" href="register.html">Create your account</a>
       </div>
     </div>
   </section>
@@ -82,10 +94,6 @@
         <div class="card"><h3>1) Connect</h3><p>Bring your spreadsheets or export from POS/CRM. We plug them into NexaBI.</p></div>
         <div class="card"><h3>2) See</h3><p>Dashboards reveal top sellers, slow movers, and trendlines that matter.</p></div>
         <div class="card"><h3>3) Act</h3><p>Get alerts and ML recommendations so you can reorder, reprice, and re‑allocate.</p></div>
-      </div>
-      <div style="margin-top:20px" class="cta-band">
-        <strong>Ready to see your data work for you?</strong>
-        <a class="button" href="register.html">Create your account</a>
       </div>
     </div>
   </section>
