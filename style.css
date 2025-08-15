@@ -1,9 +1,9 @@
 :root{
-  --ink:#0f172a; --muted:#64748b; --brand:#2563eb; --brand2:#7c3aed;
+  --ink:#e5e7eb; --muted:#93a3b8; --brand:#2563eb; --brand2:#7c3aed;
   --card:#0b1220; --panel:#0f172a; --line:#1f2a44; --ring: rgba(37,99,235,.3);
 }
 *{box-sizing:border-box} html,body{margin:0;padding:0}
-body{font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#0a0f2c;color:#e5e7eb;line-height:1.6}
+body{font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#0a0f2c;color:var(--ink);line-height:1.6}
 img{max-width:100%;display:block}
 .container{max-width:1180px;margin:0 auto;padding:0 20px}
 .nav{position:sticky;top:0;background:rgba(10,15,44,.7);backdrop-filter:blur(10px);border-bottom:1px solid #1e293b;z-index:30}
@@ -31,6 +31,12 @@ img{max-width:100%;display:block}
 .kpi .tile{background:#0b1220;border:1px solid #223149;border-radius:16px;padding:16px}
 .kpi .k{color:#9fb1cc;font-size:14px}
 .kpi .v{font-weight:800;font-size:22px}
+.logo-row{margin-top:12px;opacity:.9}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.testimonial{display:flex;gap:14px;align-items:flex-start}
+.testimonial img{width:56px;height:56px;border-radius:50%}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qa{background:#0b1220;border:1px solid #223149;border-radius:12px;padding:16px}
 .cta-band{background:linear-gradient(135deg,var(--brand),var(--brand2));border-radius:18px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px}
 .footer{padding:28px 0;border-top:1px solid #20304a;color:#94a3b8;text-align:center;background:#0b1220}
 .form-wrap{max-width:520px;margin:0 auto;background:#0b1220;border:1px solid #223149;border-radius:16px;padding:22px;box-shadow:0 12px 26px rgba(0,0,0,.35)}
@@ -41,5 +47,10 @@ label{font-weight:700;display:block;margin-top:8px}
 .submit:hover{opacity:.95}
 .badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
 .badge{font-size:12px;border:1px solid #334155;padding:6px 10px;border-radius:999px;background:#0b1220;color:#cbd5e1}
-@media (max-width:1000px){.grid{grid-template-columns:1fr 1fr}.kpi{grid-template-columns:1fr 1fr}}
-@media (max-width:640px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:16px}
+.plan{background:#0b1220;border:1px solid #223149;border-radius:16px;padding:20px}
+.plan h3{margin-top:0}
+.plan ul{margin:0;padding-left:18px;color:#a6b3c5}
+.plan .price{font-weight:800;font-size:28px;margin:6px 0}
+@media (max-width:1000px){.grid,.two,.pricing,.faq{grid-template-columns:1fr 1fr}.kpi{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid,.two,.pricing,.faq{grid-template-columns:1fr}.hero h1{font-size:34px}}
