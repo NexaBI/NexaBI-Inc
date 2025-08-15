@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your NexaBI account</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><img src="assets/logo_light.png" alt="NexaBI logo"> NexaBI</div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="register.html" class="cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin-top:0">Create your account</h2>
+      <p class="lead">Start free. No credit card required.</p>
+      <div class="form-wrap">
+        <form onsubmit="event.preventDefault(); alert('Thanks! This demo form would send your info to your backend.');">
+          <label>Full Name</label>
+          <input class="input" type="text" placeholder="Jane Doe" required>
+          <label>Business Name</label>
+          <input class="input" type="text" placeholder="Acme Retail Co." required>
+          <label>Email</label>
+          <input class="input" type="email" placeholder="you@company.com" required>
+          <label>Password</label>
+          <input class="input" type="password" placeholder="••••••••" required>
+          <button class="submit" type="submit">Create account</button>
+        </form>
+      </div>
+      <p style="text-align:center;margin-top:12px">Already have an account? <a href="#">Sign in</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 NexaBI. All rights reserved.</div>
+  </footer>
+</body>
+</html>
